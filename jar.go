@@ -614,6 +614,7 @@ func (j *Jar) newEntry(c *http.Cookie, now time.Time, defPath, host string) (e e
 		}
 	}
 
+  e.Persistent = true
 	e.Value = c.Value
 	e.Secure = c.Secure
 	e.HttpOnly = c.HttpOnly
